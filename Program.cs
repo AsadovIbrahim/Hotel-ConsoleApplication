@@ -9,7 +9,7 @@ namespace Hotel_Application
         {
             while (true)
             {
-                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.WriteLine("\t\t****MENU*****");
                 Console.WriteLine("1.Enter System");
                 Console.WriteLine("0.Exit");

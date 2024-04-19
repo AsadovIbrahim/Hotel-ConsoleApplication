@@ -11,6 +11,7 @@ namespace Hotel_Application.Functions
 {
     public static class StaticMethods
     {
+        
         public static List<Hotel> Hotels { get; set; } = new List<Hotel>();
 
         public static void LoginMenu()
@@ -69,7 +70,8 @@ namespace Hotel_Application.Functions
             Console.WriteLine("All Hotels:");
             foreach (var item in Hotels)
             {
-                Console.WriteLine(item.ShowInfo());
+                Console.WriteLine(item.ShowInfo()); 
+                Console.WriteLine("---------------");
             }
         }
 
@@ -174,10 +176,6 @@ namespace Hotel_Application.Functions
             }
         }
 
-        public static void PressAnyKey()
-        {
-            Console.WriteLine("Press Any Key...");
-            Console.ReadKey();
-        }
+        
     }
 }

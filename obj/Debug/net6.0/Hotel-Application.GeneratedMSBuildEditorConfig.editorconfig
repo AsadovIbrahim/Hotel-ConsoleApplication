@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Hotel_Application
-build_property.ProjectDir = C:\Users\CA.R215.19\Desktop\Hotel-Application\
+build_property.ProjectDir = C:\Users\ASUS\source\repos\Hotel-ConsoleApplication\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -20,27 +20,27 @@ namespace Hotel_Application.Models
         {
             if (roomId == null)
             {
-                throw new NullReferenceException("Room ID cannot be null.");
+                throw new NullReferenceException("Room ID cannot be null!");
             }
 
             Room room = Rooms.Find(r => r.Id == roomId)!;
             if (room == null)
             {
-                throw new ArgumentException("Room with the provided ID does not exist.");
+                throw new ArgumentException("Room with the provided ID does not exist!");
             }
 
             if (!room.IsAvailable)
             {
-                throw new NotAvailableException("Room is not available for reservation.");
+                throw new NotAvailableException("Room is not available for reservation!");
             }
 
             if (guestCount > room.PersonCapacity)
             {
-                throw new ArgumentException("Guest count exceeds room capacity.");
+                throw new ArgumentException("Guest count exceeds room capacity!");
             }
 
             room.IsAvailable = false;
-            Console.WriteLine($"Reservation made for Room {room.Id}.");
+            Console.WriteLine($"Reservation made for Room {room.Id}...");
         }
 
         public string ShowInfo()
